@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css?family=Changa:800');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+a,p {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: inherit;
+}
+ .container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-12 {
+    width: 100%;
+}
+.col-8{
+    width: 66.6666%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-5{
+    width: 41.6666%;
+}
+.col-4 {
+    width: 33.3333%;
+}
+.col-3 {
+    width: 25%;
+} 
+.col-2 {
+    width: 16.666%;
+}
+.d-flex {
+    display: flex;
+}
+.content-center {
+    justify-content: center;
+}
+.content-between {
+    justify-content: space-between;
+}
+.content-around{
+    justify-content: space-around;
+}
+.align-center{
+    align-items: center;
+}
+.flex-column {
+    flex-direction: column;
+}
+.grow-1 {
+    flex-grow: 1;
+} 
+section {
+    padding: 80px 0;
+    overflow: hidden;
+}
+.btn {
+    transition: color .5s;
+    cursor: pointer;
+    padding: 8px 30px;
+    border-radius: 20px;
+    color: #333b46;
+    border: solid 1px #333b46;
+    background-color: transparent;
+    font-weight: 600;
+    outline: none;
+}
+.btn:hover{
+    background-color: #333b46;
+    color: white;
+    border: solid 1px #333b46;
+}
+.translate-0 {
+    
+}
+
+@media screen and (min-width: 1600px) {
+}
+@media screen and (max-width: 980px) {
+}
+@media screen and (max-width: 640px) {
+    .col-sm-6 {
+        width: 50%;
+    }
+    .col-sm-4 {
+        width: 33.3333%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .col-xs-12 {
+        width: 100% !important;
+    }
+    .col-xs-6 {
+        width: 50% !important;
+    }
+}
+
+
+/* HEADER */
+header{
+    height: 100vh;
+    background-image: url('../img/header.png');
+    background-size: cover;
+    overflow: hidden;
+}
+.nav-bar{
+    width: 100%;
+}
+.nav-bar nav{
+    padding: 30px 0;
+    color: white;
+}
+h1{
+    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: bold;
+    font-family: 'Changa', sans-serif;
+    letter-spacing: 2px;
+}
+.nav-bar ul a{
+    display: block;
+    padding: 7px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    border: solid 1px transparent;
+}
+.nav-bar ul a:hover{
+    border: solid 1px rgba(255, 255, 255, 0.226);
+}
+.nav-bar ul a.active-page{
+    border: solid 1px white;
+}
+
+.header-title{
+    color: white;
+    text-align: center;
+    line-height: 25px;
+    opacity: .8;
+}
+.header-title h2{
+    font-size: 35px;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 40px;
+    letter-spacing: 6px;
+    transform: scaleY(0.9);
+}
+.header-title p{
+    max-width: 610px;
+    transform: scaleY(0.9);
+    opacity: 0.7;
+}
+.slider{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #19bd9a;
+    color: rgba(255, 255, 255, 0.678);
+    margin-bottom: 40px;
+}
+
+
+/* SECTION ABOUT */
+@keyframes fly {
+    0%{
+        transform: translate(0, 0);
+    }
+
+    25%{
+        transform: translate(-25px, -25px) scale(1.05);
+    }
+    50%{
+        transform: translate(-5px, -45px) scale(1.1);
+    }
+
+    75%{
+        transform: translate(25px, -25px) scale(1.05);
+    }
+
+    100%{
+        transform: translate(0, 0);
+    }
+}
+@keyframes fly-shadow {
+    0%{
+        transform: translate(0, 0);
+    }
+
+    25%{
+        transform: translate(-25px, 0px) scale(2);
+    }
+    50%{
+        transform: translate(-5px, 0px) scale(3);
+    }
+
+    75%{
+        transform: translate(25px, 0px) scale(2);
+    }
+
+    100%{
+        transform: translate(0, 0);
+    }
+}
+.this-bouncy{
+    align-items: flex-start;
+}
+.this-bouncy h3{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 4px;
+    color: #333b46;
+}
+.this-bouncy p{
+    color: #81868e;
+    font-size: 14px;
+    line-height: 25px;
+}
+.this-bouncy-img img:first-of-type{
+    animation: fly 20s infinite ease-in-out;
+}
+.this-bouncy-img img:last-of-type{
+    animation: fly-shadow 20s infinite ease-in-out;
+}
