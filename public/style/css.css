@@ -64,6 +64,12 @@ h3 {
 .offset-2{
     margin-left: 16.666%;
 }
+.offset-3{
+    margin-left: 25%;
+}
+.offset-6{
+    margin-left: 50%;
+}
 .d-flex {
     display: flex;
 }
@@ -267,12 +273,6 @@ h1{
     margin-bottom: 60px;
 }
 /*--- TAB-MENU ---*/
-.tab-menu{
-
-}
-.tab-nav{
-
-}
 .tab-indicator{
     cursor: pointer;
     width: 55px;
@@ -294,10 +294,12 @@ h1{
     margin: 50px 0; 
     display: none;
     opacity: 0;
-    transition: opacity .3s;
+    transition: opacity .5s;
 }
 .tab-item.active{
     display: block;
+}
+.tab-item.show{
     opacity: 1;
 }
 
@@ -313,4 +315,73 @@ h1{
     color: #81868e;
 
 }
+
+
+/* -------------FEATURED--------------- */
+.featured{
+    /* background-image: url('../img/green-bg.png');
+    background-attachment: fixed; */
+}
+
+
+.wrapper{
+    position: relative;
+    width: 100%;
+}
+.wrapper>div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    overflow: hidden;
+}
+.wrapper .img-1{
+
+}
+.wrapper .img-2{
+    z-index: 3;
+    position: relative;
+}
+.wrapper .img-3{
+    
+}
+.wrapper div:hover{
+    z-index: 4;
+}
+.wrapper div:hover .bg-wrapper{
+    display: none;
+}
+.bg-wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.692);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+.featured .summit-now{
+    background-image: url('../img/green-bg.png');
+    background-attachment: fixed;
+    background-size: cover;
+}
+.bg-green{
+    width: 100%;
+    height: 100%;
+    background-color: #1ca789c9;
+    padding: 45px;
+}
+.summit-now p{
+    color: white;
+    font-size: 20px;  
+}
+.summit-now .btn{
+    border-color: white;
+}
+
+
+
+
 
