@@ -324,40 +324,57 @@ h1{
 }
 
 
-.wrapper{
+.featured-img{
     position: relative;
     width: 100%;
 }
-.wrapper>div{
+.featured-img>div{
     position: absolute;
     top: 0;
     left: 0;
+    height: 100%;
     z-index: 2;
     overflow: hidden;
+    background-size: cover;
 }
-.wrapper .img-1{
-
+.featured-img img{
+    display: block;
+    width: 100%;
 }
-.wrapper .img-2{
+.featured-img .img-2{
     z-index: 3;
     position: relative;
 }
-.wrapper .img-3{
-    
-}
-.wrapper div:hover{
+.featured-img>div:hover{
     z-index: 4;
 }
-.wrapper div:hover .bg-wrapper{
+.featured-img>div:hover .bg-wrapper{
     display: none;
+}
+.hide{
+    display: none;
+}
+.featured-img:hover .hide{
+    display: flex;
 }
 .bg-wrapper{
     width: 100%;
     height: 100%;
-    background-color: rgba(128, 128, 128, 0.692);
+    background-image: url('../img/f21.jpg');
+    background-size: cover;
     position: absolute;
     top: 0;
     left: 0;
+}
+.bg-wrapper .bg{
+    background-color: rgba(32, 32, 32, 0.849);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
 }
 
 
