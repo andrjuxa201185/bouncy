@@ -399,6 +399,30 @@ h1{
 }
 
 
+/* -----------SERVICES------------ */
+/* ---TAB---*/
+.services .tab-indicator{
+    margin: 0 15px;
+}
+.services .tab-content{
+    width: 100%;
+    height: 350px;
+    margin: 0 auto;
+    padding-left: 25px;
+}
+.services .tab-item{
+    margin: 0;
+    height: 100%;
+    overflow-y: auto;
+}
+.services .tab-item h4{
+    
+}
+.services .tab-item p{
+    margin-top: 35px;
+}
+
+
 
 
 
