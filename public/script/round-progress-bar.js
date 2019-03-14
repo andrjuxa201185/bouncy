@@ -18,7 +18,7 @@ class AnimateRound {
         this.round = round;
         this.canvas = canvas;
         this.ctx = canvas.getContext('2d');
-        this.raf;
+        this.raf = null;
         this.angle = 1.5;
     }
 

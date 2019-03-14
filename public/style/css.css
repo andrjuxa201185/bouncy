@@ -318,12 +318,6 @@ h1{
 
 
 /* -------------FEATURED--------------- */
-.featured{
-    /* background-image: url('../img/green-bg.png');
-    background-attachment: fixed; */
-}
-
-
 .featured-img{
     position: relative;
     width: 100%;
@@ -414,9 +408,6 @@ h1{
     margin: 0;
     height: 100%;
     overflow-y: auto;
-}
-.services .tab-item h4{
-    
 }
 .services .tab-item p{
     margin-top: 35px;
