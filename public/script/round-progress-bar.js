@@ -30,22 +30,41 @@ class AnimateRound {
         if (this.startAngle > this.max + this.speed) return;
         this.raf = requestAnimationFrame(this.animate.bind(this));
     }
-
-    stopAnimate() {
-        this.startAngle = 1.5;
-        cancelAnimationFrame(this.raf);
-    }
 }
 
-
-document.addEventListener('DOMContentLoaded', () => {
-    const canvas = document.querySelectorAll('.round-progress');
-    const showPercent = document.querySelectorAll('.show-percent');
-    let percent = [45, 89, 67];
+function startProgressBar() {
+    const canvas = document.querySelectorAll('.active .round-progress');
+    const showPercent = document.querySelectorAll('.active .show-percent');
 
     for (let i = 0; i < canvas.length; i++) {
         canvas[i].width = 150;
         canvas[i].height = 150;
-        new AnimateRound(canvas[i], showPercent[i], percent[i]).animate();
+        new AnimateRound(canvas[i], showPercent[i], 60 + Math.random() * 40).animate();
     }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const windowHeight = window.innerHeight;
+    const tabNavServices = document.querySelector('.services .tab-nav');
+    const blockRoundProgress = document.querySelector('.services .tab-content');
+    let flag = false;
+
+    document.addEventListener('scroll', () => {
+        const blockCoord = blockRoundProgress.getBoundingClientRect().top;
+
+        if ( blockCoord < windowHeight && blockCoord > -100) {
+            if (!flag) {
+                startProgressBar();
+                flag = true;
+            }
+        } else {
+            flag = false;
+        }
+    });
+
+    tabNavServices.addEventListener('click', () => {
+        startProgressBar();
+    });
+
+    
 });

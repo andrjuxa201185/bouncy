@@ -13,223 +13,339 @@
     <title>Bouncy</title>
 </head>
 <body>
-    <header class="d-flex align-center content-between flex-column"> 
-        <div class="nav-bar">
-            <div class="container">
-                <nav class="d-flex align-center content-between">
-                    <a href="#"><h1>bouncy</h1></a>
-                    <ul class="d-flex align-center content-between">
-                        <li><a href="#" class="active-page">Hello</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>    
-                </nav>
+<header class="d-flex align-center content-between flex-column"> 
+    <div class="nav-bar">
+        <div class="container">
+            <nav class="d-flex align-center content-between">
+                <a href="#"><h1>bouncy</h1></a>
+                <ul class="d-flex align-center content-between">
+                    <li><a href="#" class="active-page">Hello</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>    
+            </nav>
+        </div>
+    </div>
+
+    <div class="header-title">
+        <h2>We Are Code Cafe</h2>
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</p>
+    </div>
+
+    <div class="wrapper-slider d-flex content-center">
+        <a href="#" class="slider d-flex align-center content-center">
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </a>
+    </div>
+</header>
+
+<main>
+    <section class="about">
+        <div class="container row content-center">
+            <div class="col-5 this-bouncy d-flex flex-column content-between">
+                <h3>This is Bouncy</h3>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Et harum quidem rerum facilis est et expedita distinctio.</p>
+                <button class="btn">Read More</button>
+            </div>
+            <div class="col-5 this-bouncy-img d-flex flex-column align-center content-between">
+                <img src="img/phone.png" alt="">
+                <img src="img/shadow-phone.png" alt="">
             </div>
         </div>
+    </section>
 
-        <div class="header-title">
-            <h2>We Are Code Cafe</h2>
-            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</p>
+    <section class="details">
+        <div class="title-section">
+            <h3>DetailS ABOUT BOUNCY</h3>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
         </div>
-
-        <div class="wrapper-slider d-flex content-center">
-            <a href="#" class="slider d-flex align-center content-center">
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </a>
+        
+        <div class="tab container">
+            <ul class="tab-nav d-flex content-center align-center">
+                <li class="tab-indicator d-flex content-center align-center active">
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </li>
+                <li class="tab-indicator d-flex content-center align-center">
+                    <i class="fa fa-code" aria-hidden="true"></i>
+                </li>
+                <li class="tab-indicator d-flex content-center align-center">
+                    <i class="fa fa-hourglass-o" aria-hidden="true"></i>
+                </li>
+            </ul>
+            <ul class="tab-content">
+                <li class="tab-item active show">
+                    <h4>Creative Ideas</h4>
+                    <div class="row">
+                        <p class="col-4">At vero eos et <span class="green">accusamus et</span> iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores </p>
+                        <p class="col-6 offset-1">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint <span class="green">occaecati</span> cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem r</p>
+                    </div>
+                </li>
+                <li class="tab-item ">
+                    <h4>Ideastive Ideas</h4>
+                    <div class="row">
+                        <p class="col-4">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum <span class="green">deleniti atque</span> corrupti quos dolores At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis </p>
+                        <p class="col-7 offset-1">provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem r</p>
+                    </div>
+                </li>
+                <li class="tab-item ">
+                    <h4>Ideas Ideas</h4>
+                    <div class="row">
+                        <p class="col-4">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores </p>
+                        <p class="col-7 offset-1">At vero eos et <span class="green">accusamus et </span> odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas <span class="green">molestias</span> excepturi sint occaecati cupiditate non provident, r</p>
+                    </div>
+                </li>
+            </ul>
         </div>
-    </header>
+    </section>
 
-    <main>
-        <section class="about">
-            <div class="container row content-center">
-                <div class="col-5 this-bouncy d-flex flex-column content-between">
-                    <h3>This is Bouncy</h3>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Et harum quidem rerum facilis est et expedita distinctio.</p>
-                    <button class="btn">Read More</button>
-                </div>
-                <div class="col-5 this-bouncy-img d-flex flex-column align-center content-between">
-                    <img src="img/phone.png" alt="">
-                    <img src="img/shadow-phone.png" alt="">
-                </div>
-            </div>
-        </section>
-
-        <section class="details">
+    <section class="featured">
             <div class="title-section">
-                <h3>DetailS ABOUT BOUNCY</h3>
+                <h3>featured projects</h3>
                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
             </div>
-            
-            <div class="tab container">
-                <ul class="tab-nav d-flex content-center align-center">
-                    <li class="tab-indicator d-flex content-center align-center active">
-                        <i class="fa fa-heart-o" aria-hidden="true"></i>
-                    </li>
-                    <li class="tab-indicator d-flex content-center align-center">
-                        <i class="fa fa-code" aria-hidden="true"></i>
-                    </li>
-                    <li class="tab-indicator d-flex content-center align-center">
-                        <i class="fa fa-hourglass-o" aria-hidden="true"></i>
-                    </li>
-                </ul>
-                <ul class="tab-content">
-                    <li class="tab-item active show">
-                        <h4>Creative Ideas</h4>
-                        <div class="row">
-                            <p class="col-4">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores </p>
-                            <p class="col-6 offset-1">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem r</p>
-                        </div>
-                    </li>
-                    <li class="tab-item ">
-                        <h4>Ideastive Ideas</h4>
-                        <div class="row">
-                            <p class="col-4">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis </p>
-                            <p class="col-7 offset-1">provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem r</p>
-                        </div>
-                    </li>
-                    <li class="tab-item ">
-                        <h4>Ideas Ideas</h4>
-                        <div class="row">
-                            <p class="col-4">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores </p>
-                            <p class="col-7 offset-1">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, r</p>
-                        </div>
-                    </li>
-                </ul>
+
+            <div class="featured-img row">
+                <div class="img-1 col-6" style="background-color: rgb(141, 245, 141)">
+                    <div class="bg-wrapper d-flex align-center">
+                        <div class="bg col-6 d-flex content-center align-center">quality</div>
+                        <div class="bg d-flex content-center align-center">quality</div>
+                    </div>
+                    <img src="img/featured.jpg" alt="">
+                </div>
+                <div class="img-2 col-6 offset-3" style="background-color: rgb(243, 131, 131)">
+                    <div class="bg-wrapper d-flex content-center align-center">
+                        <div class="bg hide d-flex content-center align-center ">VINTAGE</div>
+                        <div class="bg d-flex content-center align-center">VINTAGE</div>
+                    </div>
+                    <img src="img/f31.jpg" alt="">
+                </div>
+
+                <div class="img-3 col-6 offset-6" style="background-color: rgb(135, 135, 245)">
+                    <div class="bg-wrapper d-flex content-center align-center">
+                        <div class="bg d-flex content-center align-center">branding</div>
+                        <div class="bg d-flex content-center align-center">branding</div>
+                    </div>
+                    <img src="img/f32.jpg" alt="">
+                </div>
             </div>
-        </section>
 
-        <section class="featured">
-                <div class="title-section">
-                    <h3>featured projects</h3>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                </div>
-
-                <div class="featured-img row">
-                    <div class="img-1 col-6" style="background-color: rgb(141, 245, 141)">
-                        <div class="bg-wrapper d-flex align-center">
-                            <div class="bg col-6 d-flex content-center align-center">quality</div>
-                            <div class="bg d-flex content-center align-center">quality</div>
+            <div class="summit-now">
+                <div class="bg-green">
+                    <div class="container">
+                        <div class="row content-around align-center">
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                            <button class="btn">Submit Now</button>
                         </div>
-                        <img src="img/featured.jpg" alt="">
-                    </div>
-                    <div class="img-2 col-6 offset-3" style="background-color: rgb(243, 131, 131)">
-                        <div class="bg-wrapper d-flex content-center align-center">
-                            <div class="bg hide d-flex content-center align-center ">VINTAGE</div>
-                            <div class="bg d-flex content-center align-center">VINTAGE</div>
-                        </div>
-                        <img src="img/f31.jpg" alt="">
-                    </div>
-
-                    <div class="img-3 col-6 offset-6" style="background-color: rgb(135, 135, 245)">
-                        <div class="bg-wrapper d-flex content-center align-center">
-                            <div class="bg d-flex content-center align-center">branding</div>
-                            <div class="bg d-flex content-center align-center">branding</div>
-                        </div>
-                        <img src="img/f32.jpg" alt="">
                     </div>
                 </div>
+            </div>
+    </section>
 
-                <div class="summit-now">
-                    <div class="bg-green">
-                        <div class="container">
-                            <div class="row content-around align-center">
-                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-                                <button class="btn">Submit Now</button>
+    <section class="services">
+        <div class="title-section">
+            <h3>our services</h3>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+        </div>
+
+        <div class="container row">
+                <div class="tab container d-flex">
+                    <ul class="tab-nav d-flex content-around align-center flex-column">
+                        <li class="tab-indicator d-flex content-center align-center active">
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        </li>
+                        <li class="tab-indicator d-flex content-center align-center">
+                            <i class="fa fa-code" aria-hidden="true"></i>
+                        </li>
+                        <li class="tab-indicator d-flex content-center align-center">
+                            <i class="fa fa-hourglass-o" aria-hidden="true"></i>
+                        </li>
+                        <li class="tab-indicator d-flex content-center align-center">
+                            <i class="fa fa-hourglass-o" aria-hidden="true"></i>
+                        </li>
+                    </ul>
+                    <ul class="tab-content">
+                        <li class="tab-item active show">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h4>Creative Ideas</h4>
+                                    <div>
+                                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis <span class="green">praesentium</span> voluptatum deleniti atque corrupti quos dolores </p>
+                                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis atque corrupti quos dolores et quas molestias excepturi sint occaecati <span class="green">cupiditate</span> non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem r At vero eos et accusamus et iusto odio <span class="green">dignissimos</span> ducimus qui blanditiis.</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 block-round-progress row align-center">
+                                    <div class="col-4 round-item">
+                                        <div class="wrapper-round-progress">
+                                            <canvas class="round-progress"></canvas>
+                                            <span class="show-percent">0%</span>
+                                        </div>
+                                        <p>Branding</p>
+                                    </div>
+                                    <div class="col-4 round-item">
+                                        <div class="wrapper-round-progress">
+                                            <canvas class="round-progress"></canvas>
+                                            <span class="show-percent">0%</span>
+                                        </div>
+                                        <p>Web Design</p>
+                                    </div>
+                                    <div class="col-4 round-item">
+                                        <div class="wrapper-round-progress">
+                                            <canvas class="round-progress"></canvas>
+                                            <span class="show-percent">0%</span>
+                                        </div>
+                                        <p>UI/UX</p>
+                                    </div> 
+                                </div>
                             </div>
-                        </div>
-                    </div>
+                        </li>
+                        <li class="tab-item">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h4>Ideas</h4>
+                                    <div>
+                                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis <span class="green">praesentium</span> voluptatum deleniti atque corrupti quos dolores  et accusamus et iusto odio dignissimos ducimus qui blanditiis atque corrupo eos et accusamus et iusto odio dignissimos ducimus qui blanditiis </p>
+                                        <p>At vero eos et <span class="green">accusamus</span> et iusto odio dignissimos ducimus qui blanditiis atque corrupo eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 block-round-progress row align-center">
+                                    <div class="col-4 round-item">
+                                        <div class="wrapper-round-progress">
+                                            <canvas class="round-progress"></canvas>
+                                            <span class="show-percent">123%</span>
+                                        </div>
+                                        <p>Branding</p>
+                                    </div>
+                                    <div class="col-4 round-item">
+                                        <div class="wrapper-round-progress">
+                                            <canvas class="round-progress"></canvas>
+                                            <span class="show-percent">123%</span>
+                                        </div>
+                                        <p>Web Design</p>
+                                    </div>
+                                    <div class="col-4 round-item">
+                                        <div class="wrapper-round-progress">
+                                            <canvas class="round-progress"></canvas>
+                                            <span class="show-percent">123%</span>
+                                        </div>
+                                        <p>UI/UX</p>
+                                    </div> 
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tab-item ">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h4>Creative</h4>
+                                    <div>
+                                        <p>A accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores </p>
+                                        <p>non provident, <span class="green">similique</span> sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem r At vero eos et accusamus et id est laborum et dolorum fuga. Et harum quidem r At vero eos et accusamus et iusto odio dignissimos <span class="green">ducimus</span> qui blanditiis.</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 block-round-progress row align-center">
+                                    <div class="col-4 round-item">
+                                        <div class="wrapper-round-progress">
+                                            <canvas class="round-progress"></canvas>
+                                            <span class="show-percent">123%</span>
+                                        </div>
+                                        <p>Branding</p>
+                                    </div>
+                                    <div class="col-4 round-item">
+                                        <div class="wrapper-round-progress">
+                                            <canvas class="round-progress"></canvas>
+                                            <span class="show-percent">123%</span>
+                                        </div>
+                                        <p>Web Design</p>
+                                    </div>
+                                    <div class="col-4 round-item">
+                                        <div class="wrapper-round-progress">
+                                            <canvas class="round-progress"></canvas>
+                                            <span class="show-percent">123%</span>
+                                        </div>
+                                        <p>UI/UX</p>
+                                    </div> 
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tab-item ">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h4>Creative Ideas</h4>
+                                    <div>
+                                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis m deleniti atque corrupti quos dolores </p>
+                                        <p>At vero eos et <span class="green">accusamus et</span> iusto odio dignissimos ducimus qui blanditiis atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum <span class="green">uidem</span> r At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 block-round-progress row align-center">
+                                    <div class="col-4 round-item">
+                                        <div class="wrapper-round-progress">
+                                            <canvas class="round-progress"></canvas>
+                                            <span class="show-percent">123%</span>
+                                        </div>
+                                        <p>Branding</p>
+                                    </div>
+                                    <div class="col-4 round-item">
+                                        <div class="wrapper-round-progress">
+                                            <canvas class="round-progress"></canvas>
+                                            <span class="show-percent">123%</span>
+                                        </div>
+                                        <p>Web Design</p>
+                                    </div>
+                                    <div class="col-4 round-item">
+                                        <div class="wrapper-round-progress">
+                                            <canvas class="round-progress"></canvas>
+                                            <span class="show-percent">123%</span>
+                                        </div>
+                                        <p>UI/UX</p>
+                                    </div> 
+                                </div>
+                            </div>
+                        </li>
+                    
+                    </ul>
                 </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="services">
-            <div class="title-section">
-                <h3>our services</h3>
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-            </div>
-
+    <section class="video">
+        <div class="bg">
             <div class="container row">
-                <div class="col-6">
-                    <div class="tab container d-flex">
-                        <ul class="tab-nav d-flex content-around align-center flex-column">
-                            <li class="tab-indicator d-flex content-center align-center active">
-                                <i class="fa fa-heart-o" aria-hidden="true"></i>
-                            </li>
-                            <li class="tab-indicator d-flex content-center align-center">
-                                <i class="fa fa-code" aria-hidden="true"></i>
-                            </li>
-                            <li class="tab-indicator d-flex content-center align-center">
-                                <i class="fa fa-hourglass-o" aria-hidden="true"></i>
-                            </li>
-                            <li class="tab-indicator d-flex content-center align-center">
-                                <i class="fa fa-hourglass-o" aria-hidden="true"></i>
-                            </li>
-                        </ul>
-                        <ul class="tab-content">
-                            <li class="tab-item active show">
-                                <h4>Creative Ideas</h4>
-                                <div>
-                                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores </p>
-                                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem r At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
-                                </div>
-                            </li>
-                            <li class="tab-item ">
-                                <h4>Ideastive Ideas</h4>
-                                <div>
-                                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
-                                    <p>provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem id est laborum et dolorum fuga. Et harum quidem r At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
-                                </div>
-                            </li>
-                            <li class="tab-item ">
-                                <h4>Ideas Ideas</h4>
-                                <div>
-                                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores </p>
-                                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, r At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
-                                </div>
-                            </li>
-                            <li class="tab-item ">
-                                <h4>Ideas Ideas Ideas</h4>
-                                <div>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae corrupti inventore facilis sapiente. Ea tempore assumenda, quisquam laudantium architecto, blanditiis ab nostrum optio iste omnis iusto esse fugit dolorum illo? </p>
-                                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis et quas molestias excepturi sint occaecati cupiditate non provident, r At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="col-6 content">
+                    <h3>Impressed ?</h3>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias</p>
+                    <p>- Abdullah Noman</p>
+                    <p>Creatice Director, <span class="green">Code Cafe</span></p> 
                 </div>
-
-                <div class="col-6 block-round-progress row align-center">
-                    <div class="col-4 round-item">
-                        <div class="wrapper-round-progress">
-                            <canvas class="round-progress"></canvas>
-                            <span class="show-percent">123%</span>
+                <div class="col-6">
+                    <div class="wrapper-img-video">
+                        <div class="img-video">
+                            <video poster="https://archive.org/download/WebmVp8Vorbis/webmvp8.gif" >
+                                <source src="https://archive.org/download/WebmVp8Vorbis/webmvp8_512kb.mp4" type="video/mp4">
+                                <source src="https://archive.org/download/WebmVp8Vorbis/webmvp8.ogv" type="video/ogg">
+                                <source src="https://archive.org/download/WebmVp8Vorbis/webmvp8.webm" type="video/webm">
+                                Your browser doesn't support HTML5 video tag.
+                            </video>
+                            <img src="img/screen.png" alt="">
                         </div>
-                        <p>Branding</p>
                     </div>
-                    <div class="col-4 round-item">
-                        <div class="wrapper-round-progress">
-                            <canvas class="round-progress"></canvas>
-                            <span class="show-percent">123%</span>
-                        </div>
-                        <p>Web Design</p>
-                    </div>
-                    <div class="col-4 round-item">
-                        <div class="wrapper-round-progress">
-                            <canvas class="round-progress"></canvas>
-                            <span class="show-percent">123%</span>
-                        </div>
-                        <p>UI/UX</p>
-                    </div> 
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <footer>
+    <section class="portfolio">
+        <div class="title-section">
+            <h3>the portfolio</h3>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+        </div>
+    </section>
+</main>
 
-    </footer>
+<footer>
+
+</footer>
 </body>
 </html>

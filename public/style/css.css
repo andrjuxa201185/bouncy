@@ -111,6 +111,10 @@ section {
     color: white;
     border: solid 1px #333b46;
 }
+span.green{
+    color: #19bd9a;
+    font-weight: bold;
+}
 @media screen and (min-width: 1600px) {
 }
 @media screen and (max-width: 980px) {
@@ -407,7 +411,6 @@ h1{
 .services .tab-item{
     margin: 0;
     height: 100%;
-    overflow-y: auto;
 }
 .services .tab-item p{
     margin-top: 35px;
@@ -443,7 +446,51 @@ h1{
 }
 
 
-
+/* ----------------video----------------- */
+.video{
+    background-image: url('../img/video_cr.jpg');
+    background-attachment: fixed;
+    padding: 0;
+    overflow: visible;
+}
+.video .bg{
+    background-color: rgba(0, 0, 0, 0.87);
+    width: 100%;
+    height: 100%;
+}
+.video h3{
+    color: #81868e;
+    margin-bottom: 40px;
+}
+.video .content{
+    padding: 75px 0px;
+}
+.video .content p{
+    color: #81868e;
+    margin-bottom: 30px;
+    line-height: 25px;
+}
+.video .content p:nth-of-type(2){
+    font-weight: bold;
+}
+.video .wrapper-img-video{
+    width: 70%;
+}
+.video .img-video{
+    animation: fly 15s infinite cubic-bezier(.45, .10, .52, .79);
+    position: relative;
+}
+.video .img-video img{
+    width: 100%;
+}
+.video video{
+    border-radius: 10px;
+    width: 85%;
+    position: absolute;
+    top: 1%;
+    left: 33px;
+}
+}
 
 
 
