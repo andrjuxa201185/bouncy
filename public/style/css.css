@@ -477,7 +477,6 @@ h1{
     width: 70%;
 }
 .video .img-video{
-    animation: fly 15s infinite cubic-bezier(.45, .10, .52, .79);
     position: relative;
 }
 .video .img-video img{
