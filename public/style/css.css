@@ -82,8 +82,14 @@ h3 {
 .content-around{
     justify-content: space-around;
 }
+.content-start{
+    justify-content: flex-start;
+}
 .align-center{
     align-items: center;
+}
+.align-start{
+    align-items: flex-start;
 }
 .flex-column {
     flex-direction: column;
@@ -450,11 +456,12 @@ h1{
 .video{
     background-image: url('../img/video_cr.jpg');
     background-attachment: fixed;
+    background-size: cover;
     padding: 0;
     overflow: visible;
 }
 .video .bg{
-    background-color: rgba(0, 0, 0, 0.87);
+    background-color: rgba(0, 0, 0, 0.781);
     width: 100%;
     height: 100%;
 }
@@ -473,24 +480,84 @@ h1{
 .video .content p:nth-of-type(2){
     font-weight: bold;
 }
-.video .wrapper-img-video{
-    width: 70%;
-}
 .video .img-video{
     position: relative;
-}
-.video .img-video img{
-    width: 100%;
+    transform: translateY(-30px);
 }
 .video video{
-    border-radius: 10px;
-    width: 85%;
     position: absolute;
     top: 1%;
     left: 33px;
 }
 
 
+/* ------------portfolio------------- */
+.wrapper-img{
+    padding: 5px;
+    width: 100%;
+    overflow: hidden;
+    transition: all .5s;
+}
+.wrapper-img .img{
+    position: relative;
+    z-index: 9;
+}
+.wrapper-img img{
+    width: 100%;
+}
+.description-img{
+    opacity: 0;
+    transition: opacity .2s;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    background-color: #333333de;
+    padding: 30px;
+}
+.description-img h5{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #19bd9a;
+    letter-spacing: 5px;text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 40px;
+    font-weight: bold;
+}
+.description-img h5::after{
+    content: '';
+    display: block;
+    width: 30px;
+    height: 1px;
+    background-color: #19bd9a;
+    margin-top: 20px;
+}
+.description-img p{
+    color: #b2b3b3;
+    font-size: 12px;
+    line-height: 17px;
+    margin-top: 30px;
+}
+.description-img .wrapper-icon{
+    margin-top: 40px;
+}
+.description-img .round-icon{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.685);
+    border-radius: 50%;
+    color: rgba(255, 255, 255, 0.377);
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+
+
+.column-img .wrapper-img:hover .description-img{
+    opacity: 1;
+}
 
 
 
