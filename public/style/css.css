@@ -492,18 +492,38 @@ h1{
 
 
 /* ------------portfolio------------- */
+.portfolio-nav{
+    color: #464646;
+}
+.portfolio-nav li{
+    margin: 15px;
+    cursor: pointer;
+}
+.portfolio-nav li.active::after{
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 30px;
+    height: 2px;
+    background-color: #19bd9a;
+    transform: translateY(15px);
+}
+.portfolio-img{
+    margin-top: 50px;
+}
 .wrapper-img{
     padding: 5px;
     width: 100%;
-    overflow: hidden;
     transition: all .5s;
 }
 .wrapper-img .img{
     position: relative;
     z-index: 9;
+    overflow: hidden;
 }
 .wrapper-img img{
     width: 100%;
+    transition: transform .5s;
 }
 .description-img{
     opacity: 0;
@@ -520,9 +540,10 @@ h1{
 .description-img h5{
     font-family: 'Source Sans Pro', sans-serif;
     color: #19bd9a;
-    letter-spacing: 5px;text-transform: uppercase;
+    letter-spacing: 5px;
+    text-transform: uppercase;
     font-size: 20px;
-    margin-top: 40px;
+    margin-top: 30px;
     font-weight: bold;
 }
 .description-img h5::after{
@@ -552,12 +573,49 @@ h1{
     font-size: 14px;
     margin-right: 10px;
 }
-
-
-
+.description-img .round-icon:hover{
+    background-color: rgba(0, 0, 0, 0.836);
+    color: rgba(255, 255, 255, 0.774);
+}
 .column-img .wrapper-img:hover .description-img{
     opacity: 1;
 }
+.column-img .wrapper-img:hover img{
+    transform: scale(1.1);
+}
+
+.portfolio .container:last-of-type{
+    padding: 0 5px;;
+    margin-top: 30px;
+}
+.start-project{
+    position: relative;
+    padding: 110px 5px;
+    background-image: url('../img/portfolio-img.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+.start-project .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #19bd9998;
+    width: 100%;
+    height: 100%;
+}
+.start-project p{
+    color: white;
+}
+.start-project .btn{
+    border-color: white;
+    margin-top: 30px;
+}
+
+/* -------------TEAM-------------- */
+.team{
+    
+}
+ 
 
 
 

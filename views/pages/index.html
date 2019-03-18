@@ -10,6 +10,7 @@
 
     <script src="script/tab.js"></script>
     <script src="script/round-progress-bar.js"></script>
+    <script src="script/portfolio.js"></script>
     <title>Bouncy</title>
 </head>
 <body>
@@ -152,161 +153,160 @@
         </div>
 
         <div class="container row">
-                <div class="tab container d-flex">
-                    <ul class="tab-nav d-flex content-around align-center flex-column">
-                        <li class="tab-indicator d-flex content-center align-center active">
-                            <i class="fa fa-heart-o" aria-hidden="true"></i>
-                        </li>
-                        <li class="tab-indicator d-flex content-center align-center">
-                            <i class="fa fa-code" aria-hidden="true"></i>
-                        </li>
-                        <li class="tab-indicator d-flex content-center align-center">
-                            <i class="fa fa-hourglass-o" aria-hidden="true"></i>
-                        </li>
-                        <li class="tab-indicator d-flex content-center align-center">
-                            <i class="fa fa-hourglass-o" aria-hidden="true"></i>
-                        </li>
-                    </ul>
-                    <ul class="tab-content">
-                        <li class="tab-item active show">
-                            <div class="row">
-                                <div class="col-6">
-                                    <h4>Creative Ideas</h4>
-                                    <div>
-                                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis <span class="green">praesentium</span> voluptatum deleniti atque corrupti quos dolores </p>
-                                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis atque corrupti quos dolores et quas molestias excepturi sint occaecati <span class="green">cupiditate</span> non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem r At vero eos et accusamus et iusto odio <span class="green">dignissimos</span> ducimus qui blanditiis.</p>
-                                    </div>
-                                </div>
-                                <div class="col-6 block-round-progress row align-center">
-                                    <div class="col-4 round-item">
-                                        <div class="wrapper-round-progress">
-                                            <canvas class="round-progress"></canvas>
-                                            <span class="show-percent">0%</span>
-                                        </div>
-                                        <p>Branding</p>
-                                    </div>
-                                    <div class="col-4 round-item">
-                                        <div class="wrapper-round-progress">
-                                            <canvas class="round-progress"></canvas>
-                                            <span class="show-percent">0%</span>
-                                        </div>
-                                        <p>Web Design</p>
-                                    </div>
-                                    <div class="col-4 round-item">
-                                        <div class="wrapper-round-progress">
-                                            <canvas class="round-progress"></canvas>
-                                            <span class="show-percent">0%</span>
-                                        </div>
-                                        <p>UI/UX</p>
-                                    </div> 
+            <div class="tab container d-flex">
+                <ul class="tab-nav d-flex content-around align-center flex-column">
+                    <li class="tab-indicator d-flex content-center align-center active">
+                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                    </li>
+                    <li class="tab-indicator d-flex content-center align-center">
+                        <i class="fa fa-code" aria-hidden="true"></i>
+                    </li>
+                    <li class="tab-indicator d-flex content-center align-center">
+                        <i class="fa fa-hourglass-o" aria-hidden="true"></i>
+                    </li>
+                    <li class="tab-indicator d-flex content-center align-center">
+                        <i class="fa fa-hourglass-o" aria-hidden="true"></i>
+                    </li>
+                </ul>
+                <ul class="tab-content">
+                    <li class="tab-item active show">
+                        <div class="row">
+                            <div class="col-6">
+                                <h4>Creative Ideas</h4>
+                                <div>
+                                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis <span class="green">praesentium</span> voluptatum deleniti atque corrupti quos dolores </p>
+                                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis atque corrupti quos dolores et quas molestias excepturi sint occaecati <span class="green">cupiditate</span> non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem r At vero eos et accusamus et iusto odio <span class="green">dignissimos</span> ducimus qui blanditiis.</p>
                                 </div>
                             </div>
-                        </li>
-                        <li class="tab-item">
-                            <div class="row">
-                                <div class="col-6">
-                                    <h4>Ideas</h4>
-                                    <div>
-                                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis <span class="green">praesentium</span> voluptatum deleniti atque corrupti quos dolores  et accusamus et iusto odio dignissimos ducimus qui blanditiis atque corrupo eos et accusamus et iusto odio dignissimos ducimus qui blanditiis </p>
-                                        <p>At vero eos et <span class="green">accusamus</span> et iusto odio dignissimos ducimus qui blanditiis atque corrupo eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
+                            <div class="col-6 block-round-progress row align-center">
+                                <div class="col-4 round-item">
+                                    <div class="wrapper-round-progress">
+                                        <canvas class="round-progress"></canvas>
+                                        <span class="show-percent">0%</span>
                                     </div>
+                                    <p>Branding</p>
                                 </div>
-                                <div class="col-6 block-round-progress row align-center">
-                                    <div class="col-4 round-item">
-                                        <div class="wrapper-round-progress">
-                                            <canvas class="round-progress"></canvas>
-                                            <span class="show-percent">123%</span>
-                                        </div>
-                                        <p>Branding</p>
+                                <div class="col-4 round-item">
+                                    <div class="wrapper-round-progress">
+                                        <canvas class="round-progress"></canvas>
+                                        <span class="show-percent">0%</span>
                                     </div>
-                                    <div class="col-4 round-item">
-                                        <div class="wrapper-round-progress">
-                                            <canvas class="round-progress"></canvas>
-                                            <span class="show-percent">123%</span>
-                                        </div>
-                                        <p>Web Design</p>
+                                    <p>Web Design</p>
+                                </div>
+                                <div class="col-4 round-item">
+                                    <div class="wrapper-round-progress">
+                                        <canvas class="round-progress"></canvas>
+                                        <span class="show-percent">0%</span>
                                     </div>
-                                    <div class="col-4 round-item">
-                                        <div class="wrapper-round-progress">
-                                            <canvas class="round-progress"></canvas>
-                                            <span class="show-percent">123%</span>
-                                        </div>
-                                        <p>UI/UX</p>
-                                    </div> 
+                                    <p>UI/UX</p>
+                                </div> 
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tab-item">
+                        <div class="row">
+                            <div class="col-6">
+                                <h4>Ideas</h4>
+                                <div>
+                                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis <span class="green">praesentium</span> voluptatum deleniti atque corrupti quos dolores  et accusamus et iusto odio dignissimos ducimus qui blanditiis atque corrupo eos et accusamus et iusto odio dignissimos ducimus qui blanditiis </p>
+                                    <p>At vero eos et <span class="green">accusamus</span> et iusto odio dignissimos ducimus qui blanditiis atque corrupo eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
                                 </div>
                             </div>
-                        </li>
-                        <li class="tab-item ">
-                            <div class="row">
-                                <div class="col-6">
-                                    <h4>Creative</h4>
-                                    <div>
-                                        <p>A accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores </p>
-                                        <p>non provident, <span class="green">similique</span> sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem r At vero eos et accusamus et id est laborum et dolorum fuga. Et harum quidem r At vero eos et accusamus et iusto odio dignissimos <span class="green">ducimus</span> qui blanditiis.</p>
+                            <div class="col-6 block-round-progress row align-center">
+                                <div class="col-4 round-item">
+                                    <div class="wrapper-round-progress">
+                                        <canvas class="round-progress"></canvas>
+                                        <span class="show-percent">123%</span>
                                     </div>
+                                    <p>Branding</p>
                                 </div>
-                                <div class="col-6 block-round-progress row align-center">
-                                    <div class="col-4 round-item">
-                                        <div class="wrapper-round-progress">
-                                            <canvas class="round-progress"></canvas>
-                                            <span class="show-percent">123%</span>
-                                        </div>
-                                        <p>Branding</p>
+                                <div class="col-4 round-item">
+                                    <div class="wrapper-round-progress">
+                                        <canvas class="round-progress"></canvas>
+                                        <span class="show-percent">123%</span>
                                     </div>
-                                    <div class="col-4 round-item">
-                                        <div class="wrapper-round-progress">
-                                            <canvas class="round-progress"></canvas>
-                                            <span class="show-percent">123%</span>
-                                        </div>
-                                        <p>Web Design</p>
+                                    <p>Web Design</p>
+                                </div>
+                                <div class="col-4 round-item">
+                                    <div class="wrapper-round-progress">
+                                        <canvas class="round-progress"></canvas>
+                                        <span class="show-percent">123%</span>
                                     </div>
-                                    <div class="col-4 round-item">
-                                        <div class="wrapper-round-progress">
-                                            <canvas class="round-progress"></canvas>
-                                            <span class="show-percent">123%</span>
-                                        </div>
-                                        <p>UI/UX</p>
-                                    </div> 
+                                    <p>UI/UX</p>
+                                </div> 
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tab-item ">
+                        <div class="row">
+                            <div class="col-6">
+                                <h4>Creative</h4>
+                                <div>
+                                    <p>A accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores </p>
+                                    <p>non provident, <span class="green">similique</span> sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem r At vero eos et accusamus et id est laborum et dolorum fuga. Et harum quidem r At vero eos et accusamus et iusto odio dignissimos <span class="green">ducimus</span> qui blanditiis.</p>
                                 </div>
                             </div>
-                        </li>
-                        <li class="tab-item ">
-                            <div class="row">
-                                <div class="col-6">
-                                    <h4>Creative Ideas</h4>
-                                    <div>
-                                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis m deleniti atque corrupti quos dolores </p>
-                                        <p>At vero eos et <span class="green">accusamus et</span> iusto odio dignissimos ducimus qui blanditiis atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum <span class="green">uidem</span> r At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
+                            <div class="col-6 block-round-progress row align-center">
+                                <div class="col-4 round-item">
+                                    <div class="wrapper-round-progress">
+                                        <canvas class="round-progress"></canvas>
+                                        <span class="show-percent">123%</span>
                                     </div>
+                                    <p>Branding</p>
                                 </div>
-                                <div class="col-6 block-round-progress row align-center">
-                                    <div class="col-4 round-item">
-                                        <div class="wrapper-round-progress">
-                                            <canvas class="round-progress"></canvas>
-                                            <span class="show-percent">123%</span>
-                                        </div>
-                                        <p>Branding</p>
+                                <div class="col-4 round-item">
+                                    <div class="wrapper-round-progress">
+                                        <canvas class="round-progress"></canvas>
+                                        <span class="show-percent">123%</span>
                                     </div>
-                                    <div class="col-4 round-item">
-                                        <div class="wrapper-round-progress">
-                                            <canvas class="round-progress"></canvas>
-                                            <span class="show-percent">123%</span>
-                                        </div>
-                                        <p>Web Design</p>
+                                    <p>Web Design</p>
+                                </div>
+                                <div class="col-4 round-item">
+                                    <div class="wrapper-round-progress">
+                                        <canvas class="round-progress"></canvas>
+                                        <span class="show-percent">123%</span>
                                     </div>
-                                    <div class="col-4 round-item">
-                                        <div class="wrapper-round-progress">
-                                            <canvas class="round-progress"></canvas>
-                                            <span class="show-percent">123%</span>
-                                        </div>
-                                        <p>UI/UX</p>
-                                    </div> 
+                                    <p>UI/UX</p>
+                                </div> 
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tab-item ">
+                        <div class="row">
+                            <div class="col-6">
+                                <h4>Creative Ideas</h4>
+                                <div>
+                                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis m deleniti atque corrupti quos dolores </p>
+                                    <p>At vero eos et <span class="green">accusamus et</span> iusto odio dignissimos ducimus qui blanditiis atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum <span class="green">uidem</span> r At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
                                 </div>
                             </div>
-                        </li>
-                    
-                    </ul>
-                </div>
+                            <div class="col-6 block-round-progress row align-center">
+                                <div class="col-4 round-item">
+                                    <div class="wrapper-round-progress">
+                                        <canvas class="round-progress"></canvas>
+                                        <span class="show-percent">123%</span>
+                                    </div>
+                                    <p>Branding</p>
+                                </div>
+                                <div class="col-4 round-item">
+                                    <div class="wrapper-round-progress">
+                                        <canvas class="round-progress"></canvas>
+                                        <span class="show-percent">123%</span>
+                                    </div>
+                                    <p>Web Design</p>
+                                </div>
+                                <div class="col-4 round-item">
+                                    <div class="wrapper-round-progress">
+                                        <canvas class="round-progress"></canvas>
+                                        <span class="show-percent">123%</span>
+                                    </div>
+                                    <p>UI/UX</p>
+                                </div> 
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
 
@@ -334,12 +334,37 @@
             <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
         </div>
 
+        <ul class="container portfolio-nav d-flex content-center align-center">
+            <li class="active">All Works</li>
+            <li>Print</li>
+            <li>Identity</li>
+            <li>Branding</li>
+            <li>Web</li>
+            <li>HTML</li>
+            <li>Wordpress</li>
+        </ul>
         <div class="portfolio-img container row">
-
             <div class="column-img col-3 d-flex flex-column">
                 <div class="wrapper-img">
                     <div class="img">
                         <img src="img/1.png" alt="">
+
+                        <div class="description-img d-flex align-center">
+                            <div class="d-flex flex-column align-start content-between">
+                                <h5>title here</h5>
+                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                                <div class="wrapper-icon d-flex content-start">
+                                    <div class="round-icon d-flex content-center align-center"><i class="fa fa-link" aria-hidden="true"></i></div>
+                                    <div class="round-icon d-flex content-center align-center"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="wrapper-img">
+                    <div class="img">
+                        <img src="img/11.png" alt="">
                         <div class="description-img d-flex align-center">
                             <div class="d-flex flex-column align-start content-between">
                                 <h5>title here</h5>
@@ -353,49 +378,173 @@
                     </div>
                 </div>
                 <div class="wrapper-img">
-                    <img src="img/11.png" alt="">
-                </div>
-                <div class="wrapper-img">
-                    <img src="img/12.png" alt="">
-                </div>
-            </div>
-
-            <div class="column-img col-3 d-flex flex-column">
-                <div class="wrapper-img">
-                    <img src="img/21.png" alt="">
-                </div>
-                <div class="wrapper-img">
-                    <img src="img/22.png" alt="">
-                </div>
-                <div class="wrapper-img">
-                    <img src="img/23.png" alt="">
+                    <div class="img">
+                        <img src="img/12.png" alt="">
+                        <div class="description-img d-flex align-center">
+                            <div class="d-flex flex-column align-start content-between">
+                                <h5>title here</h5>
+                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                                <div class="wrapper-icon d-flex content-start">
+                                    <div class="round-icon d-flex content-center align-center"><i class="fa fa-link" aria-hidden="true"></i></div>
+                                    <div class="round-icon d-flex content-center align-center"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="column-img col-3 d-flex flex-column">
                 <div class="wrapper-img">
-                    <img src="img/31.png" alt="">
+                    <div class="img">
+                        <img src="img/21.png" alt="">
+                        <div class="description-img d-flex align-center">
+                            <div class="d-flex flex-column align-start content-between">
+                                <h5>title here</h5>
+                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                                <div class="wrapper-icon d-flex content-start">
+                                    <div class="round-icon d-flex content-center align-center"><i class="fa fa-link" aria-hidden="true"></i></div>
+                                    <div class="round-icon d-flex content-center align-center"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="wrapper-img">
-                    <img src="img/32.png" alt="">
+                    <div class="img">
+                        <img src="img/22.png" alt="">
+                        <div class="description-img d-flex align-center">
+                            <div class="d-flex flex-column align-start content-between">
+                                <h5>title here</h5>
+                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                                <div class="wrapper-icon d-flex content-start">
+                                    <div class="round-icon d-flex content-center align-center"><i class="fa fa-link" aria-hidden="true"></i></div>
+                                    <div class="round-icon d-flex content-center align-center"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="wrapper-img">
-                    <img src="img/33.png" alt="">
+                    <div class="img">
+                        <img src="img/23.png" alt="">
+                        <div class="description-img d-flex align-center">
+                            <div class="d-flex flex-column align-start content-between">
+                                <h5>title here</h5>
+                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                                <div class="wrapper-icon d-flex content-start">
+                                    <div class="round-icon d-flex content-center align-center"><i class="fa fa-link" aria-hidden="true"></i></div>
+                                    <div class="round-icon d-flex content-center align-center"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="column-img col-3 d-flex flex-column">
                 <div class="wrapper-img">
-                    <img src="img/41.png" alt="">
+                    <div class="img">
+                        <img src="img/31.png" alt="">
+                        <div class="description-img d-flex align-center">
+                            <div class="d-flex flex-column align-start content-between">
+                                <h5>title here</h5>
+                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                                <div class="wrapper-icon d-flex content-start">
+                                    <div class="round-icon d-flex content-center align-center"><i class="fa fa-link" aria-hidden="true"></i></div>
+                                    <div class="round-icon d-flex content-center align-center"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="wrapper-img">
-                    <img src="img/42.png" alt="">
+                    <div class="img">
+                        <img src="img/32.png" alt="">
+                        <div class="description-img d-flex align-center">
+                            <div class="d-flex flex-column align-start content-between">
+                                <h5>title here</h5>
+                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                                <div class="wrapper-icon d-flex content-start">
+                                    <div class="round-icon d-flex content-center align-center"><i class="fa fa-link" aria-hidden="true"></i></div>
+                                    <div class="round-icon d-flex content-center align-center"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="wrapper-img">
-                    <img src="img/43.png" alt="">
+                    <div class="img">
+                        <img src="img/33.png" alt="">
+                        <div class="description-img d-flex align-center">
+                            <div class="d-flex flex-column align-start content-between">
+                                <h5>title here</h5>
+                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                                <div class="wrapper-icon d-flex content-start">
+                                    <div class="round-icon d-flex content-center align-center"><i class="fa fa-link" aria-hidden="true"></i></div>
+                                    <div class="round-icon d-flex content-center align-center"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-           
+            <div class="column-img col-3 d-flex flex-column">
+                <div class="wrapper-img">
+                    <div class="img">
+                        <img src="img/41.png" alt="">
+                        <div class="description-img d-flex align-center">
+                            <div class="d-flex flex-column align-start content-between">
+                                <h5>title here</h5>
+                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                                <div class="wrapper-icon d-flex content-start">
+                                    <div class="round-icon d-flex content-center align-center"><i class="fa fa-link" aria-hidden="true"></i></div>
+                                    <div class="round-icon d-flex content-center align-center"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper-img">
+                    <div class="img">
+                        <img src="img/42.png" alt="">
+                        <div class="description-img d-flex align-center">
+                            <div class="d-flex flex-column align-start content-between">
+                                <h5>title here</h5>
+                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                                <div class="wrapper-icon d-flex content-start">
+                                    <div class="round-icon d-flex content-center align-center"><i class="fa fa-link" aria-hidden="true"></i></div>
+                                    <div class="round-icon d-flex content-center align-center"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper-img">
+                    <div class="img">
+                        <img src="img/43.png" alt="">
+                        <div class="description-img d-flex align-center">
+                            <div class="d-flex flex-column align-start content-between">
+                                <h5>title here</h5>
+                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                                <div class="wrapper-icon d-flex content-start">
+                                    <div class="round-icon d-flex content-center align-center"><i class="fa fa-link" aria-hidden="true"></i></div>
+                                    <div class="round-icon d-flex content-center align-center"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <div class="container">
+            <div class="start-project">
+                <div class="bg d-flex flex-column align-center content-center">
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis </p>
+                    <a href="" class="btn">Start Project</a>
+                </div>
+            </div>
+        </div>
+
     </section>
 </main>
 
