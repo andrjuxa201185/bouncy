@@ -12,13 +12,13 @@ class AnimateLine{
     drow(max) {
         this.ctx.beginPath();
         this.ctx.strokeStyle = '#b2b3b381';
-        this.ctx.lineWidth = 4;
+        this.ctx.lineWidth = 3;
         this.ctx.moveTo(0, 3);
         this.ctx.lineTo(this.canvas.width, 3);
         this.ctx.stroke();
         this.ctx.beginPath();
         this.ctx.strokeStyle = '#19bd9a';
-        this.ctx.lineWidth = 5;
+        this.ctx.lineWidth = 4;
         this.ctx.moveTo(0, 3);
         this.ctx.lineTo(this.canvas.width * max / 100, 3);
         this.ctx.stroke();
@@ -54,6 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const tabNavServices = document.querySelector('.team .tab-nav');
     const blockRoundProgress = document.querySelector('.team .tab-content');
     let flag = false;
+    startLinerProgressBar();
 
     document.addEventListener('scroll', () => {
         const blockCoord = blockRoundProgress.getBoundingClientRect().top;

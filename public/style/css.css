@@ -628,6 +628,30 @@ h1{
 .team .tab-indicator.active{
     background-color: #19bd9a;
 }
+.wrapper-team-img{
+    position: relative;
+}
+.wrapper-team-img img{
+    display: block;
+}
+.wrapper-team-img .wrapper-social{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    opacity: 0;
+}
+.wrapper-team-img .social i{
+    font-size: 35px;
+    margin: 0 8px;
+    cursor: pointer;
+}
+.wrapper-team-img .social i:hover{
+    transform: scale(1.2);
+}
+.wrapper-team-img:hover .wrapper-social{
+    opacity: 1;
+}
 
 .desc-progress-bar p {
     text-align: right;
@@ -672,7 +696,15 @@ h1{
 canvas.liner-progress{
     width: 100%;
 }
- 
+
+
+/* -------------------MAP------------------------- */
+.map{
+
+}
+.map iframe{
+    width: 100%;
+}
 
 
 
