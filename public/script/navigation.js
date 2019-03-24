@@ -18,18 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
         let  anchorTop;
         for (const anchor of anchors) {
             anchorTop = anchor.getBoundingClientRect().top;
-            if (anchorTop < windowHeight / 2){
-                prevAnchor = anchor;
-            } 
-            if (anchorTop > windowHeight){
-                let curentAnchorName = prevAnchor.name;
-                for (const a of links) {
-                    if (a.dataset.link === curentAnchorName){
-                        setActiveLink(a, links);
-                        return;
-                    }
-                }
-            }
             if (anchorTop >= 0 && anchorTop < (windowHeight)) {
                 let curentAnchorName = anchor.name;
                 for (const a of links) {
@@ -39,6 +27,18 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 }
             } 
+            if (anchorTop < windowHeight / 2){
+                prevAnchor = anchor;
+            } 
+            if (anchorTop > (windowHeight / 2)){
+                let curentAnchorName = prevAnchor.name;
+                for (const a of links) {
+                    if (a.dataset.link === curentAnchorName){
+                        setActiveLink(a, links);
+                        return;
+                    }
+                }
+            }
         }
     }
     setCurrentAnchor();
