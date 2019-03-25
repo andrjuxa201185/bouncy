@@ -169,24 +169,27 @@ header{
 .nav-bar{
     width: 100%;
     overflow: hidden;
+    position: relative;
 }
 .nav-bar nav{
     padding: 30px 0;
     color: white;
     transition: padding 1s;
     overflow: hidden;
+    transition: all 1s;
 }
-.nav-fixed{
+header .nav-fixed{
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     padding: 5px !important;
     color: #f3f3f3 !important;
-    background-color: #19bd99;
-    z-index: 9999;
+    background-color: #19bd99 !important;
+    z-index: 9998;
     justify-content: space-around;
     overflow: hidden;
+    transition: all 1s;
 }
 h1{
     text-transform: uppercase;
@@ -197,6 +200,10 @@ h1{
 }
 .nav-bar ul{
     overflow: hidden;
+    transition: all 1s;
+}
+.h-200{
+    height: 200px !important;
 }
 .nav-bar ul a{
     display: block;
@@ -210,6 +217,35 @@ h1{
 }
 .nav-bar ul a.active{
     border: solid 1px white;
+}
+button.nav-toggler{
+    outline: none;
+    position: fixed;
+    right: 10px;
+    top: 8px;
+    z-index: 9999;
+    width: 25px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    display: none;
+}
+button.nav-toggler div{
+    width: 27px;
+    height: 2px;
+    background-color: white;
+    transition: all .5s;
+}
+button.nav-toggler.cross div:nth-of-type(2){
+    opacity: 0;
+}
+button.nav-toggler.cross div:first-of-type{
+    transform-origin: 0 0;
+    transform: rotate(45deg);
+}
+button.nav-toggler.cross div:last-of-type{
+    transform-origin: 0% 100%;
+    transform: rotate(-45deg);
 }
 .header-title{
     color: white;
@@ -250,7 +286,37 @@ h1{
     }
 }
 @media screen and (max-width: 480px) {
-
+    .nav-bar nav{
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 5px !important;
+        color: #f3f3f3 !important;
+        background-color: transparent;
+        z-index: 9999;
+        justify-content: space-around;
+        overflow: hidden;
+    }
+    .nav-bar nav ul{
+        display: block;
+        height: 0px;
+    }
+    button.nav-toggler{
+        display: flex;
+    }
+    .header-title p{
+        line-height: 20px;
+        font-size: 12px;
+    }
+    .header-title h2{
+        font-size: 25px;
+        margin-bottom: 20px;
+        letter-spacing: 3px;
+        transform: scaleY(0.9);
+    }
 }
 
 

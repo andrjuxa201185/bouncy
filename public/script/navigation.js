@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const navBar = document.querySelector('.nav-bar nav');
     const links = document.querySelectorAll('.nav-bar nav a');
     const anchors = [...document.querySelectorAll('.anchor')];
+    const btnTogglerNav = document.querySelector('.nav-toggler');
+    const navUl = document.querySelector('.nav-bar nav ul');
     let windowHeight = window.innerHeight;
 
 
@@ -50,9 +52,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (anchor) {
             anchor.scrollIntoView({ behavior: 'smooth', block: "start" });
-            setActiveLink(target, links);
+            // setActiveLink(target, links);
         }
-    })
+    });
 
     document.addEventListener('scroll', () => {
         if (window.pageYOffset > 500) {
@@ -61,12 +63,18 @@ document.addEventListener('DOMContentLoaded', () => {
             navBar.classList.remove('nav-fixed');
         }
         setCurrentAnchor();
-    })
+    });
 
     slider.addEventListener('click', (e) => {
         e.preventDefault();
         if (anchors[1]) {
             anchors[1].scrollIntoView({ behavior: 'smooth', block: "start" });
         }
+    });
+
+    btnTogglerNav.addEventListener('click', () => {
+        navUl.classList.toggle('h-200');
+        btnTogglerNav.classList.toggle('cross');
     })
+
 });
