@@ -2,12 +2,14 @@ window.addEventListener('load', () => {
     const preloader = document.getElementById('preloader');
     preloader.style.opacity = 0;
     document.body.classList.remove('no-scroll');
+    setTimeout(() => {
+        preloader.style.display = 'none';
+    }, 1000);
 });
 
 document.addEventListener('DOMContentLoaded', () => {
     const h3 = document.querySelectorAll('h3');
     const windowHeight = window.innerHeight;
-    let h3Top;
 
     document.addEventListener('scroll', () => {
         for (let i = 0; i < h3.length; i++) {
