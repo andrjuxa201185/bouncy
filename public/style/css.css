@@ -132,6 +132,11 @@ span.green{
     color: #19bd9a;
     font-weight: bold;
 }
+.no-scroll{
+    margin: 0; 
+    height: 100%; 
+    overflow: hidden
+}
 @media screen and (min-width: 1600px) {
 }
 @media screen and (max-width: 980px) {
@@ -161,6 +166,26 @@ span.green{
     .offset-xs-0{
         margin-left: 0;
     }
+}
+
+/* -----------PRELOADER-------------------- */
+#preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    background-color: #19bd99;
+    transition: all 1s;
+    opacity: 1;
+}
+.wrapper-pre-img{
+    position: relative;
+    width: 20vh;
+    height: 20vh;
+    background-image: url('../img/tail-spin.svg');
+    background-size: cover;
 }
 
 
@@ -228,7 +253,7 @@ button.nav-toggler{
     position: fixed;
     right: 10px;
     top: 8px;
-    z-index: 9999;
+    z-index: 9998;
     width: 25px;
     height: 20px;
     background-color: transparent;
@@ -301,7 +326,7 @@ button.nav-toggler.cross div:last-of-type{
         padding: 5px !important;
         color: #f3f3f3 !important;
         background-color: transparent;
-        z-index: 9999;
+        z-index: 9998;
         justify-content: space-around;
         overflow: hidden;
     }

@@ -1,3 +1,9 @@
+window.addEventListener('load', () => {
+    const preloader = document.getElementById('preloader');
+    preloader.style.opacity = 0;
+    document.body.classList.remove('no-scroll');
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     const h3 = document.querySelectorAll('h3');
     const windowHeight = window.innerHeight;
