@@ -8,6 +8,8 @@ window.addEventListener('load', () => {
     console.log(e.data);
     console.log(e);
 
+    window.daeeeee = '-----------';
+
     frameTest.onload = () => {
       console.log('send resp');
       frameTest.contentWindow.postMessage(`${e.data.password}!!!!!`, '*');
