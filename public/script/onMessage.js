@@ -4,6 +4,7 @@ window.addEventListener('load', () => {
 
   function receiveMessage(e) {
     console.log(e.data);
+    console.log(e);
     window.localStorage.setItem('aaaaaaa', e.data.password);
   }
 });
