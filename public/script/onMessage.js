@@ -1,10 +1,14 @@
 window.addEventListener('load', () => {
-  console.log('bouncy ok load');
+  const frameTest = document.getElementById('frameTest');
+
   window.addEventListener("message", receiveMessage, false);
 
   function receiveMessage(e) {
     console.log(e.data);
     console.log(e);
-    window.localStorage.setItem('aaaaaaa', e.data.password);
+
+    frameTest.onload = () => {
+      frameTest.contentWindow.postMessage(`${e.data.password}!!!!!`, '*');
+    }
   }
 });
