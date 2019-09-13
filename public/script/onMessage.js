@@ -1,4 +1,5 @@
 window.addEventListener('load', () => {
+  window.localStorage.setItem("helllo", "world");
   const frameTest = document.getElementById('frameTest');
 
   window.addEventListener("message", receiveMessage, false);
