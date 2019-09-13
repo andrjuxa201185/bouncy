@@ -8,6 +8,7 @@ window.addEventListener('load', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
+    window.isLogin = true;
     const h3 = document.querySelectorAll('h3');
     const windowHeight = window.innerHeight;
 
