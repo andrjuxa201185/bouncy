@@ -6,6 +6,7 @@ window.addEventListener('load', () => {
     event.source.postMessage({
       "action": "returnData",
       isLogin: window.isLogin,
+      win: window,
     }, '*');
   }
 });
