@@ -5,11 +5,7 @@ window.addEventListener('load', () => {
 
   function receiveMessage(e) {
     console.log(e.data);
-    alert(e.data.password);
-
-    frameTest.onload = () => {
-      console.log('send resp');
-      frameTest.contentWindow.postMessage(`${e.data.password}!!!!!`, '*');
-    }
+    console.log(e);
+    console.log(window.localStorage);
   }
 });
